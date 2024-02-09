@@ -1,1 +1,28 @@
-THINK before you code...
+import Scanner
+import DecimalFormat
+0. Output purpose, "This program will determine how much your monthly phone bill will cost."
+1. Input package, "Enter your desired package [Green/Blue/Purple]: ".
+2. Set packages to ['green', 'blue', 'purple'].
+3. While package is not in packages:
+  a. Input package, "Invalid. Enter a valid package: ".
+4. Set hasCoupon to False.
+5. If package is 'Green':
+  a. Input hasCoupon, "Do you have a coupon for this package? [Yes/No] "
+  b. If hasCoupon is 'yes', set hasCoupon to True.
+6. If package is 'Green':
+  a. Set cost to 49.99.
+  b. Set dataProvided to 2.
+  c. Set extraRate = 15.
+7. Otherwise, if package is 'Blue':
+  a. Set cost to 70.00.
+  b. Set dataProvided to 4.
+  c. Set extraRate = 10.
+8. Otherwise:
+  a. Set cost to 99.95.
+9. Input dataUsed, "How much data did you use this month (Gigabytes)? "
+10. If (package is 'Green' or package is 'Blue') and (dataUsed > dataProvided):
+  a. Set dataOver to (dataUsed - dataProvided)
+  b. Set cost to (cost + extraRate * dataOver)
+11. If hasCoupon and (cost > 75):
+  a. Set cost to cost - 20
+12. Output "Your final monthly cost is {cost} after using {dataUsed} gigabytes!"

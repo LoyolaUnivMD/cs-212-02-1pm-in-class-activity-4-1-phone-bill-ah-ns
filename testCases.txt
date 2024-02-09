@@ -1,1 +1,7 @@
-Test cases go here. 
+package:            dataused:       cost
+green(no coupon)    8               $139.99
+green(yes coupon)   8               $119.99
+blue                8               $110.00
+purple              0               $99.95
+blue                -1              Enter a positive value
+iovea               -               not a valid package
